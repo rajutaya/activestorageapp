@@ -1,0 +1,2 @@
+View <%= image_tag @comment.image %>
+<%= link_to 'Download', rails_blob_path(@comment.image, disposition: "attachment"), :style=>'color:red'%>
