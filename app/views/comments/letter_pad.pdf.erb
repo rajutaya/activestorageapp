@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>HMAN</title>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7349534/6023792/css/fonts.css" /> -->
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            /*3FA496*/
+            box-sizing: border-box; 
+            font-family: "Gotham SSm A", "Gotham SSm B", Helvetica, sans-serif;
+            font-size: 14px;
+            font-style: normal;
+           }
+
+		.row::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+
+        .container{width: 100%;height: 1370px;}
+        .address{
+        	position: absolute;
+        	top: 1%;
+        	right: 7%;
+        	font-size: 14px;
+        	line-height: 25px;
+        	color: #fff;
+
+        }
+        .invoice-footer{
+        	width: 100%;
+        	height: 35px;
+        	background: #3FA496;
+        	position: fixed;
+        }
+
+        .invoice-body{
+        	width: 80%;
+        	height: auto;
+        	margin: 12%;
+        	background: url('file://<%=Rails.root%>/app/assets/images/pdf/hm-bg.png') no-repeat;
+        	background-position:  50% 65%;
+        	background-size: 40%;
+        }
+        .column{
+        	width: 50%;
+        	float: left;
+        }
+        .padding_bottom_30{
+        	padding-bottom: 30px;
+        }
+
+        .padding_bottom_40{
+        	padding-bottom: 40px;
+        }
+
+        .padding_bottom_50{
+        	padding-bottom: 50px;
+        }
+
+        .padding_bottom_20{
+        	padding-bottom: 20px;
+        }
+        .bold{
+        	font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+<div class="container">
+	<div class="row" style="background: #3FA496;">
+	   <img src="file://<%=Rails.root%>/app/assets/images/pdf/head.png" width="100%">
+	</div>
+
+
+    <div class="address">
+    	<h5 style="font-weight: bold;text-transform: uppercase;">Invictus Realty Private Limited</h5>
+    	CIN:U74999KA2017PTC101193 <br>
+    	#84, R.V Road, Basavanagudi, Bengaluru-04.<br>
+    	+91-9092250522, +91-9980409636 <br>
+        www.housingman.com <br> 
+        support@housingman.com<br>
+    </div>
+
+        <div class="invoice-body">
+
+
+        	<div style="text-align: center;">
+        	<p style="border-bottom: 2px solid black;font-size: 20px;display: inline-block;font-weight: bold;">TO WHOMSOEVER IT MAY CONCERN</p>
+            </div> 
+
+        	<div class="row padding_bottom_30" style="padding-top: 30px;">
+        		<div class="column">
+        			<p><span class="bold">Sub:</span> Experience / Relieving Letter</p>
+        		</div>
+        		<div class="column" style="text-align: center;">
+        			<p><span class="bold">Date:</span> 14.11.2019</p>
+        		</div>
+        	</div>
+
+           <div class="padding_bottom_30" style="line-height: 28px;">
+           	This is to confirm that Testing was employed by us as a Sr.Software Engineer from 05.01.2015 to<br>
+           	14.11.2019. He has been relieved from his duties and responsibilities by the end of the business hours<br>
+           	on <b>14.11.2019</b> from Invictus Realty Private Limited (Housingman.com).
+           </div>
+
+           <p class="padding_bottom_40">We wish him all the best in his future endeavors.</p>
+           <p class="padding_bottom_30">Thanking You</p>
+
+           <p class="padding_bottom_50">Regards</p>
+           <p class="padding_bottom_50">For Invictus Realty Private Limited</p>
+
+           <p class="padding_bottom_20">Krish Boobathy R</p>
+           <p class="padding_bottom_50">HR & Operations</p>
+
+        </div>
+
+</div>
+<div class="invoice-footer"></div>
+
+
+</body>
+</html>
